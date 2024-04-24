@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+    <title>Atomic Bar Company</title>
+</head>
+<body>
+
+<div class="container">
+    <header id="main-header" class="padded-area">
+        <div class="logo">Atomic Bar</div>
+        <nav id="main-nav">
+            <div id="hamburger" class="hide-small">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="book.html" class="book-btn">Book Now!</a>
+    </header>
+
+    <main id="main-content">
+        <section class="book-preview">
+            <h2>Glad You're Here!</h2>
+            <p>Ready for an amazing mobile bar experience? Let us bring the party to you!</p>
+        </section>
+        <section class="book-form">
+            <h3>Fill Out Form</h3>
+            <form id="my-form" action="/api/clients" method="post">
+
+            <form id="my-form" action="#" method="post">
+                <p>
+                    <label for="txt-first-name">First Name:</label>
+                    <input type="text" id="txt-first-name" name="first-name" required>
+                </p>
+                <p>
+                    <label for="txt-last-name">Last Name:</label>
+                    <input type="text" id="txt-last-name" name="last-name" required>
+                </p>
+                <p>
+                    <label for="time-date">Date(s) of Event:</label>
+                    <input type="date" id="time-date" name="date" required>
+                </p>
+                <p>
+                    <label for="type-theme">Type of Theme:</label>
+                    <select id="type-theme" name="theme">
+                        <option value="wedding">Wedding</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="celebration">Celebration</option>
+                        <option value="religion">Religion</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="address">Address of Event (Only in Columbia, SC):</label>
+                    <input type="text" id="address" name="address">
+                </p>
+                <p>
+                    <label for="quantity">Number of Guests:</label>
+                    <input type="number" id="quantity" name="quantity" min="5" max="150" required>
+                </p>
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="success-message" class="hidden">
+            <h4>Success</h4>
+            <p>Your event information has been submitted. We will contact you soon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Atomic Bar-Sherry Begay. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+<script src="book.js"></script>
+</body>
+</html>
+

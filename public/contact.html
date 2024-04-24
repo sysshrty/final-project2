@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header id="main-header" class="padded-area">
+        <div class="logo">Atomic Bar</div>
+        <nav id="main-nav">
+            <div id="hamburger" class="hide-small">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="book.html" class="book-btn">Book Now!</a>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="/submit-contact-form" method="POST">
+
+                <h3 class="close" id="close-contact"></h3>
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="94944a53-b22a-430a-8b34-259d21751c78">
+					<p>
+						<label for="contact-name">Name:</label>
+						<input type="text" id="contact-name" name="contact-name" required>
+					</p>
+					<p>
+						<label for="contact-email">Email:</label>
+						<input type="email" id="contact-email" name="contact-email" required>
+					</p>
+					<p>
+						<label for="contact-message">Message:</label>
+						<textarea id="contact-message" name="contact-message" required></textarea>
+					</p>
+					<input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+					<input type="hidden" name="subject" value="Atomic Bar Contact Submission"/>
+					<input type="hidden" name="from_name" value="My Website" />
+                    <p>
+                        <input type="checkbox" required name="terms" />
+                        <label for="terms" class="inline">I Agree to the Terms.</label>
+                    </p>
+                    <button id="submit" type="submit" class="submit-btn"><h3>Submit</h3></button>
+					<p id="contact-result"></p>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe id="mapquest" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.3337696157062!2d-108.18270103657578!3d36.738527399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873b8f7bb08e97e3%3A0xa6a435d4bb35abf8!2s813%20Schofield%20Ln%2C%20Farmington%2C%20NM%2087401!5e0!3m2!1sen!2sus!4v1710811683239!5m2!1sen!2sus"  
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <div><p>IP Address: <span id="client-ip"></span></p>
+                <!-- Add a container to display comments -->
+                <div id="comments-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sherry Begay. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>
+
+

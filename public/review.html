@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Bar - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header id="main-header" class="padded-area">
+        <div class="logo">Atomic Bar</div>
+        <nav id="main-nav">
+            <div id="hamburger" class="hide-small">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="book.html" class="book-btn">Book Now!</a>
+    </header>
+
+    <main>
+        <section class="preview">
+            <button id="add-comment-button">Add Comment</button>
+            <section id="comment-form" style="display: none;">
+                <!-- Form for adding new comments -->
+                <h2>Add Your Comment</h2>
+                <form id="add-comment-form">
+                    <input type="text" id="comment-name" placeholder="Name" required>
+                    <input type="email" id="comment-email" placeholder="Email" required>
+                    <textarea id="comment-message" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </section>
+        <h2>Other Reviews: </h2>
+        <section class="reviews">
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Paul Wall</h3>
+                    <p>Event Planner</p>
+                </div>
+                <div class="review-content">
+                    <p>"I recently hired Atomic Bar for a corporate event, and I couldn't be happier with the service. The mobile bar setup was a hit with our guests, and the themed cocktails were a big hit. The staff was professional, friendly, and went above and beyond to ensure everything ran smoothly. Highly recommend!"</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Monty Dutt</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Best Birthday ever. Will tell everyone about this company."</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Julien Baker</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"This company really knows your hospitality, even if there was an accident and emergency"</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Unknown Customer</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Would be nice if they had some food too..."</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Bessie Tom</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Atomic Bar needs more days available!"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <h2>Contact</h2>
+            <a href="#">Contact Us</a>
+            <p>Address: Atomic Bar Company</p>
+            <p>Phone: 505-345-8989</p>
+            <p>Email: atomicbar@hotmail.com</p>
+        <p>&copy; 2024 Sherry Begay. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+[
+    {
+      "_id": 1,
+      "name": "Mortal Kombat Juice",
+      "ingredients": ["Cranberry Juice", "Souls", "Vodka"],
+      "price": "$10.99",
+      "img_name": "/images/mortal.jpg",
+      "description": "A deadly concoction of cranberry juice, vodka, and a hint of souls for that extra kick.",
+      "category": "Specialty Cocktails",
+      "alcohol_content": "High",
+      "serving_size": "12 oz"
+    },
+    {
+      "_id": 2,
+      "name": "Dino Fever",
+      "ingredients": ["Aged Red Wine"],
+      "price": "$7.99",
+      "img_name": "images/dino.jpg",
+      "description": "Experience the prehistoric allure with our aged red wine, a taste that transcends time.",
+      "category": "Red Wines",
+      "alcohol_content": "Medium",
+      "serving_size": "6 oz"
+    },
+    {
+      "_id": 3,
+      "name": "The Ricky Bobby",
+      "ingredients": ["Diet Coke", "Maple Syrup", "Rum"],
+      "price": "$8.99",
+      "img_name": "images/ricky.jpg",
+      "description": "Shake and bake with this explosive mix of diet coke, rum, and a drizzle of maple syrup.",
+      "category": "Cocktails",
+      "alcohol_content": "Medium",
+      "serving_size": "10 oz"
+    },
+    {
+      "_id": 4,
+      "name": "The Swifties",
+      "ingredients": ["Gin", "Elderberry", "Lemon Juice"],
+      "price": "$13.00",
+      "img_name": "images/swifties.jpg",
+      "description": "A refreshing blend of gin, elderberry, and lemon juice that will leave you feeling swift and light.",
+      "category": "Specialty Cocktails",
+      "alcohol_content": "High",
+      "serving_size": "12 oz"
+    },
+    {
+      "_id": 5,
+      "name": "The Little Man",
+      "ingredients": ["Whisky", "Bitters", "Orange"],
+      "price": "$11.99",
+      "img_name": "images/oldfashion.jpg",
+      "description": "A robust combination of whisky, bitters, and a twist of orange peel, fit for the bold.",
+      "category": "Whiskies",
+      "alcohol_content": "High",
+      "serving_size": "8 oz"
+    },
+    {
+        "_id": 6,
+        "name": "Bioshock Bliss",
+        "ingredients": ["Tequila", "Triple Sec", "Lime Juice", "Agave Nectar", "Salt"],
+        "price": "$11.99",
+        "img_name": "images/bio.jpg",
+        "description": "Find your paradise with the Bioshock Bliss, featuring tequila, triple sec, freshly squeezed lime juice, a touch of agave nectar, and a rim of salt for that perfect balance of sweet and savory.",
+        "category": "Specialty Cocktails",
+        "alcohol_content": "Medium",
+        "serving_size": "10 oz"
+    },
+    {
+        "_id": 7,
+        "name": "Rapture Rum Runner",
+        "ingredients": ["Dark Rum", "Banana Liqueur", "Blackberry Brandy", "Grenadine", "Orange Juice"],
+        "price": "$12.99",
+        "img_name": "images/rapturerun.jpg",
+        "description": "A luxurious blend of dark rum, banana liqueur, blackberry brandy, grenadine, and a splash of orange juice, reminiscent of the opulence of Rapture.",
+        "category": "Signature Cocktails",
+        "alcohol_content": "Medium",
+        "serving_size": "10 oz"
+    },
+    {
+        "_id": 8,
+        "name": "The Old Sport",
+        "ingredients": ["Gin", "St-Germain Elderflower Liqueur", "Lime Juice", "Mint Leaves", "Club Soda"],
+        "price": "$10.99",
+        "img_name": "images/great.jpg",
+        "description": "Experience the elegance of Gatsby's Garden Party, featuring gin, St-Germain Elderflower Liqueur, freshly squeezed lime juice, muddled mint leaves, and topped with crisp club soda, a floral delight fit for the grandest soirées.",
+        "category": "Signature Cocktails",
+        "alcohol_content": "Medium",
+        "serving_size": "12 oz"
+    }
+  ]
+  
