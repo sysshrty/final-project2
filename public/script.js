@@ -1,3 +1,43 @@
+// Function to fetch comments from the server
+const fetchComments = async () => {
+    try {
+        const response = await fetch("/api/comments");
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching comments:', error);
+        return [];
+    }
+};
+
+// Define the displayComments function after the fetchComments function
+const displayComments = (comments) => {
+    const reviewsSection = document.querySelector('.reviews');
+    reviewsSection.innerHTML = ''; // Clear existing reviews
+    
+    comments.forEach(comment => {
+        const reviewDiv = document.createElement('div');
+        reviewDiv.classList.add('review');
+        reviewDiv.innerHTML = `
+            <div class="reviewer-info">
+                <h3>${comment.firstName} ${comment.lastName}</h3>
+                <p>${comment.email}</p>
+            </div>
+            <div class="review-content">
+                <p>${comment.message}</p>
+            </div>
+        `;
+        reviewsSection.appendChild(reviewDiv);
+    });
+};
+
+// Call the displayComments function when the page loads
+document.addEventListener("DOMContentLoaded", async () => {
+    await displayComments();
+});
+
+
+// Now, define the rest of your script
 document.addEventListener("DOMContentLoaded", function() {
     const addCommentButton = document.getElementById("add-comment-button");
     const commentForm = document.getElementById("comment-form");
@@ -38,38 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-const fetchComments = async () => {
-    try {
-        const response = await fetch("https://final-server-130d.onrender.com/api/comments");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching comments:', error);
-        return [];
-    }
-};
-
-const displayComments = (comments) => {
-    const reviewsSection = document.querySelector('.reviews');
-    reviewsSection.innerHTML = ''; // Clear existing reviews
-    
-    comments.forEach(comment => {
-        const reviewDiv = document.createElement('div');
-        reviewDiv.classList.add('review');
-        reviewDiv.innerHTML = `
-            <div class="reviewer-info">
-                <h3>${comment.firstName} ${comment.lastName}</h3>
-                <p>${comment.email}</p>
-            </div>
-            <div class="review-content">
-                <p>${comment.message}</p>
-            </div>
-        `;
-        reviewsSection.appendChild(reviewDiv);
-    });
-};
-
 // Call the fetchComments function when the page loads to display existing comments
 window.addEventListener("load", async () => {
     const comments = await fetchComments();
@@ -82,7 +90,7 @@ document.getElementById("add-comment-form").addEventListener("submit", async fun
     const name = document.getElementById("comment-name").value;
     const email = document.getElementById("comment-email").value;
     const message = document.getElementById("comment-message").value;
-    const response = await fetch("https://final-server-130d.onrender.com/api/comments", {
+    const response = await fetch("http://localhost:3000/api/comments", { // Update the URL to your local server
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -98,6 +106,7 @@ document.getElementById("add-comment-form").addEventListener("submit", async fun
         alert("Failed to submit comment.");
     }
 });
+
 
 
 
